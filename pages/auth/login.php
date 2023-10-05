@@ -15,8 +15,6 @@ if(isset($_POST['loginSubmit'])) {
     
 
      if(mysqli_num_rows($exist)==1) {
-
-
       
       $user=mysqli_fetch_array($exist);
 
@@ -29,7 +27,7 @@ if(isset($_POST['loginSubmit'])) {
       echo "<font color=green>User Login!</font>";
     }else{
 
-      echo "<font color=red>User Not Active</font>";
+      echo "<font color=red>User Not Actived</font>";
 
     }
      }else{
